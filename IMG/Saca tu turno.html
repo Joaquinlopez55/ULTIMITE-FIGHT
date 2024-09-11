@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5502/TURNOS.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saca tu turno</title>
+    
+<link rel="stylesheet" href="./Saca tu turno_files/styles2.css"></head>
+<body>
+<header>
+    <nav>
+        <img class="headerlogo" src="./Saca tu turno_files/logo chico.png" alt="logo">
+        <ul>
+            <li>
+            </li><li class="navbarItems"> <a class="estiloli" href="http://127.0.0.1:5502/index.html" target="_parent">MENU PRINCIPAL</a></li>
+            <li>
+                <a class="estiloli" href="http://127.0.0.1:5502/QUIENESOMOS.HTML" target="_blank">¿QUIENES SOMOS?</a> 
+            </li>
+        </ul>
+</nav></header>
+    <h1 class="titulo">SACA TU TURNO</h1>
+    <main class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Saca tu turno online</h3>
+                    <form action="http://127.0.0.1:5502/TURNOS.html">
+                        <p class="caja.especialidad">
+                            <label>Nombre Completo</label>
+                            <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required="" class="ancho">
+                        </p>
+                        <p>
+                            <label>Elegi tu fecha</label>
+                            <input type="date" class="ancho">
+                        </p>
+                        <p>
+                            <label>Elegi horario</label>
+                            <input type="time" class="ancho">
+                        </p>
+                    <p></p>
+                    <p class="block">
+                        <label>Dejanos tu Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                        <p style="
+    margin-top: 10px;
+">
+                            <label>Elegi especialidad</label>
+                            <select id="especialidad" name="especialidad" class="ancho">
+                                <option value="seleccione una opcion" hidden="">Seleccione una especialidad</option>
+                                <option value="Osteo">Osteopatia</option>
+                                <option value="Puncion seca">Puncion seca</option>
+                                <option value="Cupping">Cupping</option>
+                                <option value="Fisioterapia">Fisioterapia</option>
+                                <option value="MEP">MEP</option>
+                                <option value="Plantillas">Plantillas</option>
+                                 
+                                </select><input type="submit" value="Enviar" style="
+    margin-top: 15px;
+">             </p></form></div>
+                    
+        </div></main>
+        <footer class="body">
+            <div class="left-content">
+                <h1>KINEFIT</h1>
+                <p>Seguinos y solicita tu turno online</p>
+                <div class="icons">
+                    <div class="socialMediIcon">
+                        <img src="./Saca tu turno_files/icon-fb.png" alt="facebook">
+                    </div>
+                    <div class="socialMediIcon">
+                        <img src="./Saca tu turno_files/icon-ig.png" alt="instagram">
+                    </div>
+                    <div class="socialMediIcon">
+                        <img src="./Saca tu turno_files/icon-tk.png" alt="tiktok">
+                    </div>
+                    <div class="socialMediIcon">
+                        <img src="./Saca tu turno_files/icon-x.png" alt="twitter">
+                    </div>
+                </div>
+            </div>
+        
+        <section class="contact-info">
+            <h4>Mas Info de contacto</h4>
+            <ul class="footerform">
+                <li><i class="fas fa-map-marker-alt"></i> San Nicolas de los Arroyos</li>
+                <li><i class="fas fa-phone"></i> (3364) 15 187 555</li>
+                <li><i class="fas fa-envelope-open-text"></i> kinefit@gmail.com</li>
+            </ul>
+            <p>www.kinefit.com.ar</p>
+        </section>
+    
+            <p>©Kinesiologia/Fisiatria</p>
+        </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
